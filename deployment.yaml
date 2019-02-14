@@ -17,8 +17,8 @@ spec:
       - name: iris
         image: iris:api1
         ports:
-          - containerPort: 8081:8081
+          - containerPort: 8081
       - name: web-app
         image: quickstart-image:web-app1
         ports:
-          - containerPort: 8080:8080
+          - containerPort: 8080
