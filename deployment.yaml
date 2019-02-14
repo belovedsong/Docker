@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: iris
-        image: iris:api1
+        image: gcr.io/valentine2019-231620/iris:api1
         ports:
           - containerPort: 8081
       - name: web-app
-        image: quickstart-image:web-app1
+        image: gcr.io/valentine2019-231620/quickstart-image:web-app1
         ports:
           - containerPort: 8080
