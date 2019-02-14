@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: iris-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitea
+  template:
+    metadata:
+      labels:
+        app: iris
+        app: web-app
+    spec:
+      containers:
+      - name: iris
+        image: iris:api1
+        ports:
+          - containerPort: 8081:8081
+      - name: web-app
+        image: quickstart-image:web-app1
+        ports:
+          - containerPort: 8080:8080
