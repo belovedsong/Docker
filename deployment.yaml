@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: iris
-        app: web-app
+        app: quickstart-image
     spec:
       containers:
       - name: iris
