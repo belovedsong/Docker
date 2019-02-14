@@ -15,7 +15,7 @@ spec:
         app: iris
     spec:
       containers:
-      - name: iris
+      - name: api
         image: gcr.io/valentine2019-231620/iris:api1
         ports:
           - containerPort: 8081
